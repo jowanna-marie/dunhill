@@ -14,19 +14,19 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('index.index');
+    return view('auth.login');
 });
 
 Route::get('/verification', function () {
     return view('verification.verification');
 });
 
-Route::get('/about', function () {
-    return view('aboutus.aboutus');
+Route::get('/article', function () {
+    return view('article.article');
 });
 
-Route::get('/dashboarddunhill', function () {
-    return view('dashboarddunhill.dashboarddunhill');
+Route::get('/home', function () {
+    return view('home.home');
 });
 
 Route::get('/graph', function () {
@@ -39,6 +39,22 @@ Route::get('/members', function () {
 
 Route::get('/survey', function () {
     return view('survey.survey');
+});
+
+Route::get('/live', function () {
+    return view('live.live');
+});
+
+Route::get('/raffle', function () {
+    return view('raffle.raffle');
+});
+
+Route::get('/thankyou', function () {
+    return view('thankyou.thankyou');
+});
+
+Route::get('/products', function () {
+    return view('products.products');
 });
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
