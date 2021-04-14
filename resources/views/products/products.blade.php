@@ -1,5 +1,5 @@
 <x-guest-layout>
-    <div style="background-image: url({{asset('bg.jpg')}});" class="fixed bg-no-repeat bg-cover"> 
+    <div style="background-image: url({{asset('bg.jpg')}});" class="fixed overflow-y-auto bg-no-repeat bg-cover"> 
         <div class="flex flex-col w-screen h-screen">
             <div class="flex flex-row w-full h-24">
                 @include('layouts.nav')
